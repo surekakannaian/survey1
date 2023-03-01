@@ -1,0 +1,78 @@
+*{
+    border: none;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: Roboto;
+}
+:root{
+    --start-:#4a4f6e;
+    --end-:#1b1f34;
+    --btn-end:#228515;
+    --btn-start:#83e740;
+    --blue-end:#6b7d9d;
+    --blue-start:#b4c2dd;
+    --shadow:#bebfc6;
+    --bg-color: #f8f9fa;
+    --download:#ea2d2b;
+    --write:#ce16a1;
+    --trash:#344767;
+}
+.navbar{
+    background: linear-gradient(to right ,var(--start-),var(--end-));
+}
+.navbar-brand{
+    font-weight: 600;
+}
+.buttons a{
+    background: linear-gradient(to right,var(--btn-start),var(--btn-end));
+    margin: 2px;
+    font-size: 13px;
+}
+.form{
+    background-color: var(
+        --bg-color
+    );
+    padding: 5%;
+}
+.poly-table{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: -1px 3px 10px gray;
+}
+.badge{
+    background: linear-gradient(to right,var(--blue-start),var(--blue-end));
+}
+.fa-eye{
+    color: var(--btn-end);
+}
+.fa-pen-to-square{
+    color: var(--write);
+}
+.fa-download {
+    color: var(--download);
+}
+.fa-trash{
+    color: var(--trash);
+}
+.poly-table h5{
+font-weight: 600;
+color: #414c67;
+}
+th{
+    color: #b2bbcb;
+}
+tr:nth-child(1),tr:nth-child(2),tr:nth-child(3),tr:nth-child(4),tr:nth-child(5){
+    color: #424e67;
+}
+
+@media only screen and (max-width:450px){
+    th{
+        font-size: 13px;
+    } 
+    tr:nth-child(1),tr:nth-child(2),tr:nth-child(3),tr:nth-child(4),tr:nth-child(5){
+       font-size: 12px;
+    } 
+    .form{
+        padding: 0;
+    }
+}
